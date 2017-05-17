@@ -49,7 +49,7 @@ Shader "Hidden/Ray Marching/Ray Marching"
 	
 	#define TOTAL_STEPS 128.0
 	#define STEP_CNT 128
-	#define STEP_SIZE 1 / 128.0
+	#define STEP_SIZE 0.01/ 64.0
 
 	float4x4 _ObjectToView;
 
@@ -69,7 +69,7 @@ Shader "Hidden/Ray Marching/Ray Marching"
 		// pos.x += noiseTex.r * 0.03;
 
 		float4 dst = 0;
-		float3 stepDist = dir * STEP_SIZE;
+		float3 stepDist = dir * STEP_SIZE ;
 
 		float3 normalValues;
 		float depthValue;

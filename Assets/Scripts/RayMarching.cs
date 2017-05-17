@@ -42,11 +42,11 @@ public class RayMarching : MonoBehaviour
 	private float opacity = 1;
 	[Header("Volume texture size. These must be a power of 2")]
 	[SerializeField]
-	private int volumeWidth = 256;
+	private int volumeWidth = 512;
 	[SerializeField]
-	private int volumeHeight = 256;
+	private int volumeHeight = 512;
 	[SerializeField]
-	private int volumeDepth = 256;
+	private int volumeDepth = 64;
 	[Header("Clipping planes percentage")]
 	[SerializeField]
 	private Vector4 clipDimensions = new Vector4(100, 100, 100, 0);
